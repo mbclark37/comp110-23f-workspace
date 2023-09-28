@@ -1,7 +1,7 @@
 """My one shot wordle!"""
 __author__ = "730650946"
 
-secret_word : str = "python"
+secret_word: str = "python"
 chosen_word: str = input(f"What is your {len(secret_word)}-letter guess? ")
 check_index: int = 0
 answer_emoji: str = " "
