@@ -1,3 +1,5 @@
+"""A dupilcate turtle tutorial."""
+
 from turtle import Turtle, colormode, done
 colormode(255)
 
@@ -23,7 +25,7 @@ bob.goto(45, 60)
 bob.pendown()
 bob.color(16, 5, 191)
 bob.speed(80)
-i: int = 0
+i = 0
 while (i < 3):
     bob.forward(side_length)
     bob.left(120)
@@ -35,7 +37,7 @@ girl.penup()
 girl.goto(0, 200)
 girl.pendown()
 girl.speed(50)
-while (i<360):
+while (i < 360):
     girl.forward(3)
     girl.right(1)
     i += 1
@@ -43,7 +45,7 @@ while (i<360):
 
 boy: Turtle = Turtle()
 i = 0
-while (i<360):
+while (i < 360):
     boy.forward(2)
     boy.right(1)
     i += 1

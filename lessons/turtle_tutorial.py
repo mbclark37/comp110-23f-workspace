@@ -1,5 +1,8 @@
+"""My turtle."""
+
 from turtle import Turtle, colormode, done
 colormode(255)
+
 
 def main() -> None:
     """The entrypoint of my scene."""
@@ -23,7 +26,7 @@ def petals(petal_turtle: Turtle, x: float, y: float, R: int, G: int, B: int, len
     petal_turtle.color(R, G, B)
     petal_turtle.speed(50)
     petal_turtle.begin_fill()
-    for i in range (360):
+    for i in range(360):
         petal_turtle.forward(length)
         petal_turtle.right(1)
     petal_turtle.end_fill()
@@ -59,7 +62,7 @@ def draw_rectangle(r_turtle: Turtle, angle_x: float, angle_y: float, length: flo
     """Helper function for rectangles."""
     """The towards statement is me trying something new! It angles the turtle so I can draw things on a slant!"""
     r_turtle.towards(angle_x, angle_y) 
-    for x in range (2):
+    for x in range(2):
         r_turtle.forward(length)
         r_turtle.right(90)
         r_turtle.forward(width)
@@ -74,7 +77,7 @@ def sun(sun_turtle: Turtle, x: float, y: float) -> None:
     sun_turtle.color(252, 233, 45)
     sun_turtle.speed(50)
     sun_turtle.begin_fill()
-    for i in range (360):
+    for i in range(360):
         sun_turtle.forward(1.5)
         sun_turtle.right(1)
     sun_turtle.end_fill()

@@ -23,6 +23,6 @@ def f_sum(vals: list[float]) -> float:
 def f_range_sum(vals: list[float]) -> float:
     """Uses a for-range loop."""
     total: float = 0
-    for iter in range(0, len(vals), 10):
-        total += (iter)
+    for iter in range(0, len(vals)):
+        total += vals[iter]
     return total
